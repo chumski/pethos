@@ -3,7 +3,6 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
-      <module fileurl="file://D:\ARRANET\Project\Android\PET HOS\pethos\app\app.iml" filepath="D:\ARRANET\Project\Android\PET HOS\pethos\app\app.iml" />
       <module fileurl="file://$PROJECT_DIR$/pethos.iml" filepath="$PROJECT_DIR$/pethos.iml" />
       <module fileurl="file://D:\ARRANET\Project\Android\PET HOS\pethos\pethosdev.iml" filepath="D:\ARRANET\Project\Android\PET HOS\pethos\pethosdev.iml" />
     </modules>
