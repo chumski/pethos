@@ -3,7 +3,9 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/pethos.iml" filepath="$PROJECT_DIR$/pethos.iml" />
+      <module fileurl="file://C:\Users\Rahmah Maharani\AndroidStudioProjects\pethos_dev\app\app.iml" filepath="C:\Users\Rahmah Maharani\AndroidStudioProjects\pethos_dev\app\app.iml" />
+      <module fileurl="file://C:\Users\Rahmah Maharani\AndroidStudioProjects\pethos_dev\pethos.iml" filepath="C:\Users\Rahmah Maharani\AndroidStudioProjects\pethos_dev\pethos.iml" />
+      <module fileurl="file://$PROJECT_DIR$/pethos_dev.iml" filepath="$PROJECT_DIR$/pethos_dev.iml" />
       <module fileurl="file://D:\ARRANET\Project\Android\PET HOS\pethos\pethosdev.iml" filepath="D:\ARRANET\Project\Android\PET HOS\pethos\pethosdev.iml" />
     </modules>
   </component>
