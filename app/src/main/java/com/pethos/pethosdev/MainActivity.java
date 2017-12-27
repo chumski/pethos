@@ -12,5 +12,6 @@ public class MainActivity extends AppCompatActivity {
 
         //hehe test
         //hahaha
+        //test nih cum pake gitignore
     }
 }
