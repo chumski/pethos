@@ -4,10 +4,10 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://D:\Febri\AndroidStudioProj\pethosdev\pethos.iml" filepath="D:\Febri\AndroidStudioProj\pethosdev\pethos.iml" />
-      <module fileurl="file://$PROJECT_DIR$/pethos_dev.iml" filepath="$PROJECT_DIR$/pethos_dev.iml" />
       <module fileurl="file://D:\Febri\AndroidStudioProj\pethosdev\pethos_dev.iml" filepath="D:\Febri\AndroidStudioProj\pethosdev\pethos_dev.iml" />
-      <module fileurl="file://D:\ARRANET\Project\Android\PET HOS\pethos\pethosdev.iml" filepath="D:\ARRANET\Project\Android\PET HOS\pethos\pethosdev.iml" />
+      <module fileurl="file://$PROJECT_DIR$/pethosdev.iml" filepath="$PROJECT_DIR$/pethosdev.iml" />
       <module fileurl="file://C:\Users\Rahmah Maharani\AndroidStudioProjects\pethos_dev\pethosdev.iml" filepath="C:\Users\Rahmah Maharani\AndroidStudioProjects\pethos_dev\pethosdev.iml" />
+      <module fileurl="file://D:\ARRANET\Project\Android\PET HOS\pethos\pethosdev.iml" filepath="D:\ARRANET\Project\Android\PET HOS\pethos\pethosdev.iml" />
     </modules>
   </component>
 </project>

@@ -9,6 +9,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.Toast;
 import org.json.JSONObject;
 import java.io.BufferedReader;
@@ -22,8 +23,8 @@ import java.net.URL;
 import java.net.URLConnection;
 import java.net.URLEncoder;
 import java.util.Iterator;
-
 import javax.net.ssl.HttpsURLConnection;
+
 
 public class LoginActivity extends AppCompatActivity {
     Button btnLogin;
@@ -38,6 +39,8 @@ public class LoginActivity extends AppCompatActivity {
         btnLogin = (Button)findViewById(R.id.button);
         txtUname = (EditText)findViewById(R.id.editText4);
         txtPassword = (EditText)findViewById(R.id.editText5);
+        ImageView logo = (ImageView) findViewById(R.id.logo_pet_hos_login);
+        logo.setImageResource(R.drawable.logo_merah);
 
         btnLogin.setOnClickListener(new View.OnClickListener() {
             @Override
