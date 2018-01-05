@@ -7,6 +7,9 @@ import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.CardView;
+import android.support.v7.widget.GridLayoutManager;
+import android.support.v7.widget.LinearLayoutManager;
+import android.support.v7.widget.RecyclerView;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.SearchView;
@@ -26,20 +29,27 @@ public class MainActivity extends AppCompatActivity {
     LinearLayout sliderDotspanel;
     private int dotscount;
     private ImageView[] dots;
+    RecyclerView recyclerView;
+    RecyclerView.LayoutManager layoutManager;
+    RvAdapter adapter;
+    ArrayList<KategoriClass> kategoriArray = new ArrayList<>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        //logo
         ImageView logo = (ImageView) findViewById(R.id.logo_pet_hos);
         logo.setImageResource(R.drawable.logo_merah);
 
+        //search
         CardView cv = (CardView) findViewById(R.id.cv_search);
         cv.setBackgroundResource(R.drawable.gradient_background_card_search);
         search=(SearchView) findViewById(R.id.searchView1);
         search.setQueryHint("Cari Produk atau Toko");
         search.setIconified(false);
+
 
         search.setOnQueryTextFocusChangeListener(new SearchView.OnFocusChangeListener()
         {
@@ -62,11 +72,13 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        //images slider
         viewPager = (ViewPager) findViewById(R.id.pager);
         sliderDotspanel = (LinearLayout) findViewById(R.id.sliderDots);
         SlidingAd_Adapter slidingAd_adapter = new SlidingAd_Adapter(this);
         viewPager.setAdapter(slidingAd_adapter);
 
+        //dot indicators
         dotscount = slidingAd_adapter.getCount();
         dots = new ImageView[dotscount];
 
@@ -99,5 +111,25 @@ public class MainActivity extends AppCompatActivity {
 
             }
         });
+
+        //cardview kategori
+        initDataKategori();
+        recyclerView = (RecyclerView) findViewById(R.id.rv);
+        layoutManager = new GridLayoutManager(getApplicationContext(),3);
+        recyclerView.setLayoutManager(layoutManager);
+        adapter = new RvAdapter(kategoriArray);
+        recyclerView.setAdapter(adapter);
+    }
+
+    private void initDataKategori(){
+        kategoriArray.add(new KategoriClass(1,"Best Seller", R.drawable.best_seller));
+        kategoriArray.add(new KategoriClass(2,"Near Me", R.drawable.near_me));
+        kategoriArray.add(new KategoriClass(3,"Promotion", R.drawable.promotion));
+        kategoriArray.add(new KategoriClass(3,"Dog Food", R.drawable.dog_food));
+        kategoriArray.add(new KategoriClass(3,"Cat Food", R.drawable.cat_food));
+        kategoriArray.add(new KategoriClass(3,"Accessories", R.drawable.accessories));
+        kategoriArray.add(new KategoriClass(3,"Health", R.drawable.health));
+        kategoriArray.add(new KategoriClass(3,"Grooming", R.drawable.grooming_tools));
+        kategoriArray.add(new KategoriClass(3,"Tools", R.drawable.tools));
     }
 }
